@@ -1,5 +1,5 @@
 body {
-    background-image: radial-gradient(circle 100vh at bottom, #6a7bf2, #ffffff);
+    background-image: radial-gradient(circle 120vh at bottom, #6a7bf2, #ffffff);
     margin: 0;
 }
 
@@ -61,8 +61,6 @@ about{
     height: 90vh;
     border-radius: 5vh;
     position: relative;
-    border: 1px solid #4a5bd2;
-
 }
 
 .row{
@@ -71,14 +69,18 @@ about{
 
 .cell {
     position: relative;
-    border: 1px solid #4a5bd2;
     margin: 5px;
     padding: 10px;
     border-radius: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: white;
 }
 
-.cell-1 { height: 24vh; width: 35vw;}
-.cell-2 { height: 24vh; width: 35vw;}
+.cell-1 { height: 24vh; width: 47vw;}
+.cell-2 { height: 24vh; width: 23vw;}
 .cell-3 { height: 44vh; width: 23vw;}
 
 .cell-4 { height: 39vh; width: 23vw; margin-top: -19.5vh;}
@@ -93,10 +95,92 @@ about{
 
 /* CELL 1 */
 
+.cell-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #bacde7;
+}
+
+.cell-1 h2{
+    margin: 1vh;
+    color: white;
+    font-size: 4.4vh;
+    font-weight: 600;
+}
+
+/* CELL 3 */
+
+.cell-3{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-image: url('media/about2.png'); 
+    background-position-x: center;
+    background-size: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cell-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/about2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cell-3:hover::before {
+    transform: scale(1.2);
+}
+
+
+
+/* CELL 4 */
+
+.cell-4{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-image: url('media/about3.png'); 
+    background-position-x: center;
+    background-size: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cell-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/about3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cell-4:hover::before {
+    transform: scale(1.2);
+}
 
 /* CELL 5 */
 
-.container_iframe {
+.container_iframe {}
     position: absolute;
     top: 0;
     left: 0;
@@ -109,7 +193,7 @@ iframe {
 }
 
 .overlay-text5 {
-    font-size: 6vw;
+    font-size: 10vh;
     font-weight: 100;
     position: absolute;
     top: 50%;
@@ -132,7 +216,7 @@ iframe {
 .overlay-button5 button {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
-    color: #6a7bf2;
+    color: #A1AFFB;
     padding: 10px 30px; 
     font-size: 2.2vh;
     background-color: white;
@@ -142,8 +226,132 @@ iframe {
 }
 
 .overlay-button5 button:hover {
-    background-color: whitesmoke;
+    color: #4a5bd2;
 }
+
+/* CELL 6 */
+
+.cell-6{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-image: url('media/about1.png'); 
+    background-position-x: center;
+    background-size: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cell-6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/about1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cell-6:hover::before {
+    transform: scale(1.2);
+}
+
+/* Cell 2 - 7 - 8 */
+
+.cell-2, .cell-7, .cell-8 { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-image: radial-gradient(circle 30vh at center, #6a7bf2, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+.cell-7 h3, .cell-8 h3, .cell-2 h3{
+    margin: 0;
+    color: white;
+    font-size: 5vh;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.cell-2::before, .cell-7::before, .cell-8::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle 30vh at center, #6a7bf2, #ffffff);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cell-2:hover::before, .cell-7:hover::before, .cell-8:hover::before{
+    transform: scale(2);
+}
+
+.cell-2::after, .cell-7::after, .cell-8::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white; /* Change this to the color you want */
+}
+
+/* Cell 9 */
+
+.cell-9{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-image: url('media/about4.png'); 
+    background-position-x: center;
+    background-size: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cell-9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/about4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cell-9:hover::before {
+    transform: scale(1.2);
+}
+
+/* Cell 10 */
+
+.cell-10{
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+
 
 /* ----------------- Services ------------- */
 
@@ -154,7 +362,6 @@ services{
     height: 90vh;
     border-radius: 5vh;
     position: relative;
-    background-color: #6a7bf2;
 }
 
 services .carousel {
@@ -192,7 +399,6 @@ products{
 }
 
 products h1{
-    font-family: 'Nunito', sans-serif;
     color: #4a5bd2;
     font-size: 8vh;
     display: flex;
@@ -203,6 +409,16 @@ products h1{
 .cell-02 { height: 38.5vh; width: 31vw;}
 .cell-03 { height: 38.5vh; width: 31vw;}
 
-.cell-04 { height: 38.5vh; width: 31vw; }
+.cell-04 { height: 38.5vh; width: 31vw;}
 .cell-05 { height: 38.5vh; width: 31vw;}
 .cell-06 { height: 38.5vh; width: 31vw;}
+
+.cell-01, .cell-02, .cell-03, .cell-04, .cell-05, .cell-06 {
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cell-01:hover, .cell-02:hover, .cell-03:hover, .cell-04:hover, .cell-05:hover, .cell-06:hover {
+    transform: scale(1.1);

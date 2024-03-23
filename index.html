@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    
 <!----------------------------------Navbar----------------------------------------------->
     <nav class="navbar d-flex justify-content-center">
         <div class="video-container">
@@ -22,12 +23,13 @@
             <h1 class="video-title">Open Mind</h1>
         </div>
         <a href="home.html">Home</a>
-        <a href="services.html">Courses</a>
-        <a href="contact.html">Contact</a>
+        <a href="#services">Research</a>
+        <a href="#products">Services</a>
     </nav>
 
 <!----------------------------------Main----------------------------------------------->
     <main>
+        <!--About-->
         <about>
         <div class="container">
             <div class="row justify-content-center flex-nowrap">
@@ -44,7 +46,9 @@
                         <div class="overlay-text5">About Us</div>
                         <div class="overlay-button5">
                             <a href=#contact>
-                                <button type="button5">Meet Our Team</button>
+                                <button type="button" data-toggle="modal" data-target="#teamModal">
+                                    Meet Our Mission
+                                  </button>
                             </a>
                         </div>
                     </div>
@@ -60,7 +64,8 @@
         </div>
         </about>
 
-        <services>
+        <!--Services-->
+        <div id ="services">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -84,11 +89,12 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </services>
+        </div>
 
-    <products>
+    <!--Products-->
+    <div id ="products">
     <div class="container">
-        <h1>Products</h1>
+        <h1>Services</h1>
         <div class="row justify-content-center flex-nowrap">
             <div class="cell cell-01"></div>
             <div class="cell cell-02"></div>
@@ -100,8 +106,25 @@
             <div class=" cell cell-06"></div>
         </div>
     </div>
-    </main>
-    </products>
+</div>
+</main>
+
+<!----------------------------------Modals----------------------------------------------->
+<div class="modal fade modal-fullscreen" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title w-100 text-center" id="teamModalLabel">About Us</h2>
+            </div>
+            <div class="modal-body">
+                <p>"We are an interdisciplinary team dedicated to mental health and integral development of children, adolescents and adults, we are focused in giving diagnostics and treatment based in cutting edge technology." </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

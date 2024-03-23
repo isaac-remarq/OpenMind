@@ -304,11 +304,15 @@ iframe {
     content: "";
     position: absolute;
     bottom: 15px;
-    right: 20px;
+    right: 15px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: white; /* Change this to the color you want */
+    background-color: white;
+    background-image: url('media/icon1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
 }
 
 /* Cell 9 */
@@ -355,7 +359,7 @@ iframe {
 
 /* ----------------- Services ------------- */
 
-services{
+#services{
     display: flex;
     align-items: flex-start;
     margin: 5vh;
@@ -364,22 +368,22 @@ services{
     position: relative;
 }
 
-services .carousel {
+#services .carousel {
     width: 100%;
     height: 100%;
 }
 
-services .carousel .carousel-inner {
+#services .carousel .carousel-inner {
     width: 100%;
     height: 100%;
 }
 
-services .carousel .carousel-item {
+#services .carousel .carousel-item {
     width: 100%;
     height: 100%;
 }
 
-services .carousel .carousel-item img {
+#services .carousel .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -388,7 +392,7 @@ services .carousel .carousel-item img {
 
 /* ----------------- Products ------------- */
 
-products{
+#products{
     display: flex;
     align-items: flex-start;
     margin: 5vh;
@@ -398,7 +402,7 @@ products{
 
 }
 
-products h1{
+#products h1{
     color: #4a5bd2;
     font-size: 8vh;
     display: flex;
@@ -422,4 +426,58 @@ products h1{
 
 .cell-01:hover, .cell-02:hover, .cell-03:hover, .cell-04:hover, .cell-05:hover, .cell-06:hover {
     transform: scale(1.1);
+}
+
+
+/* ----------------- Modals ------------- */
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-dialog.modal-xl .modal-content {
+    background-image: url('media/modal1.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    max-width: none;
+    width: 150vw;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+.modal-header h2{
+    margin-left: 60vh;
+    color: #6a7bf2;
+    font-size: 8vh;
+    display: flex;
+    justify-content: left;
+}
+
+.modal-body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: #6a7bf2;
+  font-size: 4.6vh;
+  margin-left: 60vh;
+  margin-right: 5vh;
+  text-align: left;
+}
+.modal-footer button {
+    margin-right: 4vh; 
+    margin-bottom: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vh;
+    font-style: none;
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    background-color: #6a7bf2; 
+    border-radius: 5vh; 
+    border: none;
+}
+.modal-footer button:hover {
+    background-color: #4a5bd2;
 }
